@@ -1,0 +1,1107 @@
+{
+  "users": [
+    {
+      "id": "user_9cbea5dcd41d5dba",
+      "email": "ersrtg@srg.com",
+      "name": "ll",
+      "passwordHash": "2e593f8b902deb20f07961dc779e73e2:8aef4c995d48a531e413d688c896478768fcf328488dd8c88aeab6f863933ea4ca6a52617ac8b0fa541d866a7b44d5874e54a23f84d833733e61648fd14a310a",
+      "createdAt": "2026-09-05T17:19:48.543Z",
+      "wallet": {
+        "balance": 0,
+        "savedMethodLabel": null
+      },
+      "policy": {
+        "maxTransactionAmount": 3000,
+        "dailySpendingLimit": 5000,
+        "maxQuantityPerItem": 2,
+        "userApprovalRequired": true,
+        "maxPaymentAttempts": 1,
+        "hardCeiling": 15000
+      }
+    },
+    {
+      "id": "user_55c1ab598a39063f",
+      "email": "ersrtgg@srg.com",
+      "name": "lak",
+      "passwordHash": "0ee185e9f44781efe91fdfcd3f446899:d7d74589853d4415a552d6d73bda86185f124ff6a579f386364691278f7d7da9146d72ba710e8cc0b75768da498e0acc020b012cc18c267499b7ae0cbcc7444e",
+      "createdAt": "2026-09-05T17:24:38.823Z",
+      "wallet": {
+        "balance": 23786,
+        "savedMethodLabel": null
+      },
+      "policy": {
+        "maxTransactionAmount": 3000,
+        "dailySpendingLimit": 5000,
+        "maxQuantityPerItem": 2,
+        "userApprovalRequired": true,
+        "maxPaymentAttempts": 1,
+        "hardCeiling": 15000
+      }
+    },
+    {
+      "id": "user_13c5046ac9cef241",
+      "email": "you1@gmail.com",
+      "name": "Alex",
+      "passwordHash": "5ac4011fc2b65e18dd57c896663b6d51:d404f09a174b2750070ce67791659436cc28dd116c8f9655936fa7a8eb14217229f1002ef8280feaba4614569fdd4613cfd784e3020b17efc47102b1f0e476a3",
+      "createdAt": "2026-09-05T17:46:34.648Z",
+      "wallet": {
+        "balance": 4786,
+        "savedMethodLabel": null
+      },
+      "policy": {
+        "maxTransactionAmount": 3000,
+        "dailySpendingLimit": 5000,
+        "maxQuantityPerItem": 2,
+        "userApprovalRequired": true,
+        "maxPaymentAttempts": 1,
+        "hardCeiling": 15000
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_208e67db3598bedc",
+      "userId": "user_55c1ab598a39063f",
+      "orderId": "order_TYRAQRCxMSxVIu",
+      "lines": [
+        {
+          "productId": "a1ead7204cfeb449",
+          "name": "Adidas Men's Adivat M Running Shoes",
+          "price": 1214,
+          "quantity": 1,
+          "reason": "Selected from grid",
+          "kind": "primary"
+        }
+      ],
+      "total": 1214,
+      "status": "captured",
+      "overridden": false,
+      "createdAt": "2026-09-05T17:26:26.483Z"
+    },
+    {
+      "id": "ord_db9f6bb428c6fa63",
+      "userId": "user_13c5046ac9cef241",
+      "orderId": "order_TYRYNuxHfBLTkV",
+      "lines": [
+        {
+          "productId": "a1ead7204cfeb449",
+          "name": "Adidas Men's Adivat M Running Shoes",
+          "price": 1214,
+          "quantity": 1,
+          "reason": "Selected from grid",
+          "kind": "primary"
+        }
+      ],
+      "total": 1214,
+      "status": "captured",
+      "overridden": false,
+      "createdAt": "2026-09-05T17:49:03.972Z"
+    }
+  ],
+  "auditEvents": [
+    {
+      "id": "evt_1788628805066_1",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:05.066Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "Find me a casual sofa under ₹30,000",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628805568_2",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:05.568Z",
+      "eventType": "INTENT_EXTRACTED",
+      "actor": "agent",
+      "action": "Extracted structured intent from user request",
+      "metadata": {
+        "product": "sofa",
+        "category": "furniture",
+        "productType": "sofa",
+        "requiredTerms": [
+          "sofa"
+        ],
+        "budget": 30000,
+        "preferences": [],
+        "quantity": 1,
+        "rawMessage": "Find me a casual sofa under ₹30,000"
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628805571_3",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:05.571Z",
+      "eventType": "PRODUCT_RANKED",
+      "actor": "agent",
+      "action": "HUBTURE Multipurpose Car Care Cleaner Foam Spray Car Seat Exterior and Interior Shoes Sofa Cleaning Spray Cleaner (Pack of 1) ranked #1",
+      "reason": "Highest weighted score across category, budget, preference, rating and stock.",
+      "metadata": {
+        "breakdown": [
+          {
+            "label": "Category Match",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Product Type",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Within Budget",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Preference Match",
+            "points": 14,
+            "max": 20
+          },
+          {
+            "label": "Rating",
+            "points": 5,
+            "max": 5
+          },
+          {
+            "label": "Stock Availability",
+            "points": 5,
+            "max": 5
+          }
+        ],
+        "score": 94
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628805665_4",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:05.665Z",
+      "eventType": "RECOMMENDATION_CREATED",
+      "actor": "agent",
+      "action": "Recommended HUBTURE Multipurpose Car Care Cleaner Foam Spray Car Seat Exterior and Interior Shoes Sofa Cleaning Spray Cleaner (Pack of 1)",
+      "reason": "I selected HUBTURE Multipurpose Car Care Cleaner Foam Spray Car Seat Exterior and Interior Shoes Sofa Cleaning Spray Cleaner (Pack of 1) because it has a 4.9★ seller/product rating, is currently available. It is within your ₹30,000 budget.",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628805673_5",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:05.673Z",
+      "eventType": "POLICY_CHECK_STARTED",
+      "actor": "system",
+      "action": "Evaluating proposed cart against spending policy",
+      "metadata": {
+        "total": 499
+      },
+      "status": "pending"
+    },
+    {
+      "id": "evt_1788628849351_6",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:49.351Z",
+      "eventType": "POLICY_CHECK_FAILED",
+      "actor": "system",
+      "action": "Policy re-evaluated",
+      "reason": "Wallet balance ₹0 is insufficient for this ₹499 payment.",
+      "metadata": {
+        "checks": [
+          {
+            "name": "Transaction Limit",
+            "status": "passed",
+            "detail": "₹499 is within the ₹3,000 limit."
+          },
+          {
+            "name": "Daily Spending Limit",
+            "status": "passed",
+            "detail": "₹499 of ₹5,000 daily limit used."
+          },
+          {
+            "name": "Absolute Ceiling",
+            "status": "passed",
+            "detail": "₹499 is within your ₹15,000 absolute ceiling."
+          },
+          {
+            "name": "Stock Availability",
+            "status": "passed",
+            "detail": "All items are in stock and within quantity limits."
+          },
+          {
+            "name": "Wallet Balance",
+            "status": "failed",
+            "detail": "Wallet balance ₹0 is insufficient for this ₹499 payment. Top up in Profile."
+          },
+          {
+            "name": "Payment Attempt Limit",
+            "status": "passed",
+            "detail": "0/1 attempts used."
+          },
+          {
+            "name": "User Approval",
+            "status": "pending",
+            "detail": "Waiting for explicit user approval before payment can proceed."
+          }
+        ],
+        "total": 499,
+        "overridden": false
+      },
+      "status": "blocked"
+    },
+    {
+      "id": "evt_1788628857024_7",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:57.024Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "I need comfortable running shoes under ₹3,000",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628857832_8",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:57.832Z",
+      "eventType": "INTENT_EXTRACTED",
+      "actor": "agent",
+      "action": "Extracted structured intent from user request",
+      "metadata": {
+        "product": "running shoes",
+        "category": "shoes",
+        "productType": "running shoes",
+        "requiredTerms": [
+          "running",
+          "shoe"
+        ],
+        "budget": 3000,
+        "preferences": [
+          "comfortable",
+          "comfort",
+          "running"
+        ],
+        "quantity": 1,
+        "rawMessage": "I need comfortable running shoes under ₹3,000"
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628857836_9",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:57.836Z",
+      "eventType": "PRODUCT_RANKED",
+      "actor": "agent",
+      "action": "DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design ranked #1",
+      "reason": "Highest weighted score across category, budget, preference, rating and stock.",
+      "metadata": {
+        "breakdown": [
+          {
+            "label": "Category Match",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Product Type",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Within Budget",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Preference Match",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Rating",
+            "points": 5,
+            "max": 5
+          },
+          {
+            "label": "Stock Availability",
+            "points": 5,
+            "max": 5
+          }
+        ],
+        "score": 100
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628857904_10",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:57.904Z",
+      "eventType": "RECOMMENDATION_CREATED",
+      "actor": "agent",
+      "action": "Recommended DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design",
+      "reason": "I selected DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design because it has a 4.7★ seller/product rating, is currently available. It is within your ₹3,000 budget.",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628857922_11",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:20:57.922Z",
+      "eventType": "POLICY_CHECK_STARTED",
+      "actor": "system",
+      "action": "Evaluating proposed cart against spending policy",
+      "metadata": {
+        "total": 298
+      },
+      "status": "pending"
+    },
+    {
+      "id": "evt_1788628881723_12",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:21:21.723Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "tell me more about adidas shoes",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788628881729_13",
+      "userId": "user_9cbea5dcd41d5dba",
+      "timestamp": "2026-09-05T17:21:21.729Z",
+      "eventType": "PRODUCT_INFO_REQUESTED",
+      "actor": "agent",
+      "action": "Classified message as a product-info question rather than a shopping request",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629113919_14",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:13.919Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "Tell me about Asics Gel-Courtmov+ Men's Badminton Shoe - Azure/Butter",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629113925_15",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:13.925Z",
+      "eventType": "PRODUCT_INFO_REQUESTED",
+      "actor": "agent",
+      "action": "Classified message as a product-info question rather than a shopping request",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629125867_16",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:25.867Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "is there any better options then this",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629125873_17",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:25.873Z",
+      "eventType": "PRODUCT_INFO_REQUESTED",
+      "actor": "agent",
+      "action": "Classified message as a follow-up question about the last discussed product",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629138501_18",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:38.501Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "I need comfortable running shoes under ₹3,000",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629139283_19",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:39.283Z",
+      "eventType": "INTENT_EXTRACTED",
+      "actor": "agent",
+      "action": "Extracted structured intent from user request",
+      "metadata": {
+        "product": "running shoes",
+        "category": "shoes",
+        "productType": "running shoes",
+        "requiredTerms": [
+          "running",
+          "shoe"
+        ],
+        "budget": 3000,
+        "preferences": [
+          "comfortable",
+          "comfort",
+          "running"
+        ],
+        "quantity": 1,
+        "rawMessage": "I need comfortable running shoes under ₹3,000"
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629139289_20",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:39.289Z",
+      "eventType": "PRODUCT_RANKED",
+      "actor": "agent",
+      "action": "DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design ranked #1",
+      "reason": "Highest weighted score across category, budget, preference, rating and stock.",
+      "metadata": {
+        "breakdown": [
+          {
+            "label": "Category Match",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Product Type",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Within Budget",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Preference Match",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Rating",
+            "points": 5,
+            "max": 5
+          },
+          {
+            "label": "Stock Availability",
+            "points": 5,
+            "max": 5
+          }
+        ],
+        "score": 100
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629139385_21",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:39.385Z",
+      "eventType": "RECOMMENDATION_CREATED",
+      "actor": "agent",
+      "action": "Recommended DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design",
+      "reason": "I selected DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design because it has a 4.7★ seller/product rating, is currently available. It is within your ₹3,000 budget.",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629139399_22",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:39.399Z",
+      "eventType": "POLICY_CHECK_STARTED",
+      "actor": "system",
+      "action": "Evaluating proposed cart against spending policy",
+      "metadata": {
+        "total": 298
+      },
+      "status": "pending"
+    },
+    {
+      "id": "evt_1788629143776_23",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:43.776Z",
+      "eventType": "PRODUCT_ADDED",
+      "actor": "user",
+      "action": "Updated proposed cart",
+      "metadata": {
+        "lineCount": 1,
+        "total": 1214
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629143861_24",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:43.861Z",
+      "eventType": "POLICY_CHECK_FAILED",
+      "actor": "system",
+      "action": "Policy re-evaluated",
+      "reason": "Waiting for explicit user approval.",
+      "metadata": {
+        "checks": [
+          {
+            "name": "Transaction Limit",
+            "status": "passed",
+            "detail": "₹1,214 is within the ₹3,000 limit."
+          },
+          {
+            "name": "Daily Spending Limit",
+            "status": "passed",
+            "detail": "₹1,214 of ₹5,000 daily limit used."
+          },
+          {
+            "name": "Absolute Ceiling",
+            "status": "passed",
+            "detail": "₹1,214 is within your ₹15,000 absolute ceiling."
+          },
+          {
+            "name": "Stock Availability",
+            "status": "passed",
+            "detail": "All items are in stock and within quantity limits."
+          },
+          {
+            "name": "Wallet Balance",
+            "status": "passed",
+            "detail": "₹25,000 available in wallet."
+          },
+          {
+            "name": "Payment Attempt Limit",
+            "status": "passed",
+            "detail": "0/1 attempts used."
+          },
+          {
+            "name": "User Approval",
+            "status": "pending",
+            "detail": "Waiting for explicit user approval before payment can proceed."
+          }
+        ],
+        "total": 1214,
+        "overridden": false
+      },
+      "status": "blocked"
+    },
+    {
+      "id": "evt_1788629146904_25",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:46.904Z",
+      "eventType": "USER_APPROVED",
+      "actor": "user",
+      "action": "Approved payment of ₹1,214",
+      "status": "success",
+      "metadata": {
+        "total": 1214,
+        "overridden": false
+      }
+    },
+    {
+      "id": "evt_1788629147428_26",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:47.428Z",
+      "eventType": "POLICY_CHECK_PASSED",
+      "actor": "system",
+      "action": "Policy re-evaluated",
+      "metadata": {
+        "checks": [
+          {
+            "name": "Transaction Limit",
+            "status": "passed",
+            "detail": "₹1,214 is within the ₹3,000 limit."
+          },
+          {
+            "name": "Daily Spending Limit",
+            "status": "passed",
+            "detail": "₹1,214 of ₹5,000 daily limit used."
+          },
+          {
+            "name": "Absolute Ceiling",
+            "status": "passed",
+            "detail": "₹1,214 is within your ₹15,000 absolute ceiling."
+          },
+          {
+            "name": "Stock Availability",
+            "status": "passed",
+            "detail": "All items are in stock and within quantity limits."
+          },
+          {
+            "name": "Wallet Balance",
+            "status": "passed",
+            "detail": "₹25,000 available in wallet."
+          },
+          {
+            "name": "Payment Attempt Limit",
+            "status": "passed",
+            "detail": "0/1 attempts used."
+          },
+          {
+            "name": "User Approval",
+            "status": "passed",
+            "detail": "Explicit user approval received."
+          }
+        ],
+        "total": 1214,
+        "overridden": false
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629148969_27",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:25:48.969Z",
+      "eventType": "PAYMENT_ORDER_CREATED",
+      "actor": "system",
+      "action": "Created payment order order_TYRAQRCxMSxVIu",
+      "metadata": {
+        "orderId": "order_TYRAQRCxMSxVIu",
+        "amount": 1214,
+        "overridden": false
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629186474_28",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:26:26.474Z",
+      "eventType": "PAYMENT_SUCCESS",
+      "actor": "system",
+      "action": "₹1,214 paid via Razorpay — payment_id: pay_TYRAkmWu6BT2wx",
+      "metadata": {
+        "orderId": "order_TYRAQRCxMSxVIu",
+        "paymentId": "pay_TYRAkmWu6BT2wx",
+        "amount": 1214,
+        "overridden": false
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629231179_29",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:27:11.179Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "Perfume",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629232106_30",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:27:12.106Z",
+      "eventType": "INTENT_EXTRACTED",
+      "actor": "agent",
+      "action": "Extracted structured intent from user request",
+      "metadata": {
+        "product": "fragrance",
+        "category": "fragrances",
+        "productType": "fragrance",
+        "requiredTerms": [
+          "fragrance"
+        ],
+        "budget": null,
+        "preferences": [],
+        "quantity": 1,
+        "rawMessage": "Perfume"
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629232112_31",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:27:12.112Z",
+      "eventType": "PRODUCT_RANKED",
+      "actor": "agent",
+      "action": "UNO Aroma Car Air Freshener Musk & lemonade with Essential Oils Fragrance in Wooden Bottle with Wooden Diffuser Lid (10 m... ranked #1",
+      "reason": "Highest weighted score across category, budget, preference, rating and stock.",
+      "metadata": {
+        "breakdown": [
+          {
+            "label": "Category Match",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Product Type",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Within Budget",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Preference Match",
+            "points": 14,
+            "max": 20
+          },
+          {
+            "label": "Rating",
+            "points": 5,
+            "max": 5
+          },
+          {
+            "label": "Stock Availability",
+            "points": 5,
+            "max": 5
+          }
+        ],
+        "score": 94
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629232472_32",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:27:12.472Z",
+      "eventType": "RECOMMENDATION_CREATED",
+      "actor": "agent",
+      "action": "Recommended UNO Aroma Car Air Freshener Musk & lemonade with Essential Oils Fragrance in Wooden Bottle with Wooden Diffuser Lid (10 m...",
+      "reason": "I selected UNO Aroma Car Air Freshener Musk & lemonade with Essential Oils Fragrance in Wooden Bottle with Wooden Diffuser Lid (10 m... because it has a 4.7★ seller/product rating, is currently available.",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788629232487_33",
+      "userId": "user_55c1ab598a39063f",
+      "timestamp": "2026-09-05T17:27:12.487Z",
+      "eventType": "POLICY_CHECK_STARTED",
+      "actor": "system",
+      "action": "Evaluating proposed cart against spending policy",
+      "metadata": {
+        "total": 549
+      },
+      "status": "pending"
+    },
+    {
+      "id": "evt_1788630419678_1",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:46:59.678Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "I need comfortable running shoes under ₹3,000",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630420467_2",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:00.467Z",
+      "eventType": "INTENT_EXTRACTED",
+      "actor": "agent",
+      "action": "Extracted structured intent from user request",
+      "metadata": {
+        "product": "running shoes",
+        "category": "shoes",
+        "productType": "running shoes",
+        "requiredTerms": [
+          "running",
+          "shoe"
+        ],
+        "budget": 3000,
+        "preferences": [
+          "comfortable",
+          "comfort",
+          "running"
+        ],
+        "quantity": 1,
+        "rawMessage": "I need comfortable running shoes under ₹3,000"
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630420472_3",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:00.472Z",
+      "eventType": "PRODUCT_RANKED",
+      "actor": "agent",
+      "action": "DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design ranked #1",
+      "reason": "Highest weighted score across category, budget, preference, rating and stock.",
+      "metadata": {
+        "breakdown": [
+          {
+            "label": "Category Match",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Product Type",
+            "points": 25,
+            "max": 25
+          },
+          {
+            "label": "Within Budget",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Preference Match",
+            "points": 20,
+            "max": 20
+          },
+          {
+            "label": "Rating",
+            "points": 5,
+            "max": 5
+          },
+          {
+            "label": "Stock Availability",
+            "points": 5,
+            "max": 5
+          }
+        ],
+        "score": 100
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630420551_4",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:00.551Z",
+      "eventType": "RECOMMENDATION_CREATED",
+      "actor": "agent",
+      "action": "Recommended DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design",
+      "reason": "I selected DECONDS Stylish and Comfortable Walking and Running Shoes for Kids in and Design because it has a 4.7★ seller/product rating, is currently available. It is within your ₹3,000 budget.",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630420575_5",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:00.575Z",
+      "eventType": "POLICY_CHECK_STARTED",
+      "actor": "system",
+      "action": "Evaluating proposed cart against spending policy",
+      "metadata": {
+        "total": 298
+      },
+      "status": "pending"
+    },
+    {
+      "id": "evt_1788630464624_6",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:44.624Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "tell me more about adidas shoes",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630464629_7",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:44.629Z",
+      "eventType": "PRODUCT_INFO_REQUESTED",
+      "actor": "agent",
+      "action": "Classified message as a product-info question rather than a shopping request",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630474329_8",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:54.329Z",
+      "eventType": "PRODUCT_ADDED",
+      "actor": "user",
+      "action": "Updated proposed cart",
+      "metadata": {
+        "lineCount": 1,
+        "total": 1214
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630474555_9",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:47:54.555Z",
+      "eventType": "POLICY_CHECK_FAILED",
+      "actor": "system",
+      "action": "Policy re-evaluated",
+      "reason": "Wallet balance ₹0 is insufficient for this ₹1,214 payment.",
+      "metadata": {
+        "checks": [
+          {
+            "name": "Transaction Limit",
+            "status": "passed",
+            "detail": "₹1,214 is within the ₹3,000 limit."
+          },
+          {
+            "name": "Daily Spending Limit",
+            "status": "passed",
+            "detail": "₹1,214 of ₹5,000 daily limit used."
+          },
+          {
+            "name": "Absolute Ceiling",
+            "status": "passed",
+            "detail": "₹1,214 is within your ₹15,000 absolute ceiling."
+          },
+          {
+            "name": "Stock Availability",
+            "status": "passed",
+            "detail": "All items are in stock and within quantity limits."
+          },
+          {
+            "name": "Wallet Balance",
+            "status": "failed",
+            "detail": "Wallet balance ₹0 is insufficient for this ₹1,214 payment. Top up in Profile."
+          },
+          {
+            "name": "Payment Attempt Limit",
+            "status": "passed",
+            "detail": "0/1 attempts used."
+          },
+          {
+            "name": "User Approval",
+            "status": "pending",
+            "detail": "Waiting for explicit user approval before payment can proceed."
+          }
+        ],
+        "total": 1214,
+        "overridden": false
+      },
+      "status": "blocked"
+    },
+    {
+      "id": "evt_1788630506175_10",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:48:26.175Z",
+      "eventType": "POLICY_CHECK_FAILED",
+      "actor": "system",
+      "action": "Policy re-evaluated",
+      "reason": "Waiting for explicit user approval.",
+      "metadata": {
+        "checks": [
+          {
+            "name": "Transaction Limit",
+            "status": "passed",
+            "detail": "₹1,214 is within the ₹3,000 limit."
+          },
+          {
+            "name": "Daily Spending Limit",
+            "status": "passed",
+            "detail": "₹1,214 of ₹5,000 daily limit used."
+          },
+          {
+            "name": "Absolute Ceiling",
+            "status": "passed",
+            "detail": "₹1,214 is within your ₹15,000 absolute ceiling."
+          },
+          {
+            "name": "Stock Availability",
+            "status": "passed",
+            "detail": "All items are in stock and within quantity limits."
+          },
+          {
+            "name": "Wallet Balance",
+            "status": "passed",
+            "detail": "₹6,000 available in wallet."
+          },
+          {
+            "name": "Payment Attempt Limit",
+            "status": "passed",
+            "detail": "0/1 attempts used."
+          },
+          {
+            "name": "User Approval",
+            "status": "pending",
+            "detail": "Waiting for explicit user approval before payment can proceed."
+          }
+        ],
+        "total": 1214,
+        "overridden": false
+      },
+      "status": "blocked"
+    },
+    {
+      "id": "evt_1788630508425_11",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:48:28.425Z",
+      "eventType": "USER_APPROVED",
+      "actor": "user",
+      "action": "Approved payment of ₹1,214",
+      "status": "success",
+      "metadata": {
+        "total": 1214,
+        "overridden": false
+      }
+    },
+    {
+      "id": "evt_1788630508956_12",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:48:28.956Z",
+      "eventType": "POLICY_CHECK_PASSED",
+      "actor": "system",
+      "action": "Policy re-evaluated",
+      "metadata": {
+        "checks": [
+          {
+            "name": "Transaction Limit",
+            "status": "passed",
+            "detail": "₹1,214 is within the ₹3,000 limit."
+          },
+          {
+            "name": "Daily Spending Limit",
+            "status": "passed",
+            "detail": "₹1,214 of ₹5,000 daily limit used."
+          },
+          {
+            "name": "Absolute Ceiling",
+            "status": "passed",
+            "detail": "₹1,214 is within your ₹15,000 absolute ceiling."
+          },
+          {
+            "name": "Stock Availability",
+            "status": "passed",
+            "detail": "All items are in stock and within quantity limits."
+          },
+          {
+            "name": "Wallet Balance",
+            "status": "passed",
+            "detail": "₹6,000 available in wallet."
+          },
+          {
+            "name": "Payment Attempt Limit",
+            "status": "passed",
+            "detail": "0/1 attempts used."
+          },
+          {
+            "name": "User Approval",
+            "status": "passed",
+            "detail": "Explicit user approval received."
+          }
+        ],
+        "total": 1214,
+        "overridden": false
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630509805_13",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:48:29.805Z",
+      "eventType": "PAYMENT_ORDER_CREATED",
+      "actor": "system",
+      "action": "Created payment order order_TYRYNuxHfBLTkV",
+      "metadata": {
+        "orderId": "order_TYRYNuxHfBLTkV",
+        "amount": 1214,
+        "overridden": false
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630543962_14",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:49:03.962Z",
+      "eventType": "PAYMENT_SUCCESS",
+      "actor": "system",
+      "action": "₹1,214 paid via Razorpay — payment_id: pay_TYRYevPFWfc0Q9",
+      "metadata": {
+        "orderId": "order_TYRYNuxHfBLTkV",
+        "paymentId": "pay_TYRYevPFWfc0Q9",
+        "amount": 1214,
+        "overridden": false
+      },
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630594900_15",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:49:54.900Z",
+      "eventType": "USER_REQUEST",
+      "actor": "user",
+      "action": "Tell me about Klapp Double Shaft Badminton Rackets, with 20 Shuttlecock (with Net) -Multicolor - Set of 6",
+      "status": "success"
+    },
+    {
+      "id": "evt_1788630594907_16",
+      "userId": "user_13c5046ac9cef241",
+      "timestamp": "2026-09-05T17:49:54.907Z",
+      "eventType": "PRODUCT_INFO_REQUESTED",
+      "actor": "agent",
+      "action": "Classified message as a product-info question rather than a shopping request",
+      "status": "success"
+    }
+  ]
+}

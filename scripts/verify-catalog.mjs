@@ -1,0 +1,10 @@
+import fs from "fs";
+const file = "data/products.json";
+if (!fs.existsSync(file)) throw new Error(`${file} is missing. Run npm run fetch-kaggle.`);
+const products = JSON.parse(fs.readFileSync(file, "utf8"));
+if (!Array.isArray(products) || products.length === 0) throw new Error("Amazon Kaggle catalog is empty. Run npm run fetch-kaggle.");
+const bad = products.find((p) => !p.id || !p.name || !p.category || !p.attributes?.source?.includes("Kaggle Amazon Products Dataset"));
+if (bad) throw new Error(`Invalid Kaggle product: ${bad.id || "unknown"}`);
+console.log(`✓ Amazon Kaggle catalog: ${products.length.toLocaleString()} products`);
+console.log(`✓ Source: lokeshparab/amazon-products-dataset`);
+console.log(`✓ Price/rating fields come from the dataset; stock is marked synthetic`);
